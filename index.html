@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Md. Abdullah Al Sadik – CSE Student, Web Developer & Aspiring Android Engineer. Portfolio showcasing projects, skills and passion for software development."
+    />
+    <meta
+      name="keywords"
+      content="Abdullah Al Sadik, CSE student, web developer, Android developer, portfolio, UIU"
+    />
+    <title>Sadik.dev – Abdullah Al Sadik | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="dark">
+    <!-- ░░ SCROLL PROGRESS ░░ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ░░ CURSOR ░░ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ░░ NAVBAR ░░ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Sadik<span class="logo-dot"
+            >.dev</span
+          ><span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon sun">☀</span>
+            <span class="theme-icon moon">◑</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="home">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Available for Internship &amp; Junior Role
+        </div>
+
+        <div class="hero-avatar-wrap reveal" style="--d: 0.2s">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring avatar-ring-2"></div>
+          <div class="avatar-img">
+            <img src="profile.jpeg" alt="Profile photo" class="avatar-photo" />
+          </div>
+          <!-- Floating tech icons -->
+          <div class="float-icon float-icon-1" title="HTML5">⟨/⟩</div>
+          <div class="float-icon float-icon-2" title="CSS3">✦</div>
+          <div class="float-icon float-icon-3" title="JavaScript">JS</div>
+          <div class="float-icon float-icon-4" title="Git">⎇</div>
+          <div class="float-icon float-icon-5" title="Android">⬡</div>
+          <div class="float-icon float-icon-6" title="Kotlin">K</div>
+        </div>
+
+        <p class="hero-greeting reveal" style="--d: 0.3s">Hello, I'm</p>
+        <h1 class="hero-name reveal" style="--d: 0.4s">
+          Md. Abdullah<br /><span class="name-gradient">Al Sadik</span>
+        </h1>
+
+        <div class="hero-roles reveal" style="--d: 0.5s">
+          <span class="role-static">I am a </span>
+          <span class="role-type" id="roleType"></span>
+          <span class="role-cursor">|</span>
+        </div>
+
+        <p class="hero-tagline reveal" style="--d: 0.6s">
+          Building Scalable Web Applications Today,<br />Creating Android
+          Experiences Tomorrow.
+        </p>
+        <p class="hero-desc reveal" style="--d: 0.7s">
+          A passionate Computer Science &amp; Engineering student who enjoys
+          solving real-world problems through code, building responsive web
+          applications, and continuously learning modern technologies.
+        </p>
+
+        <div class="hero-btns reveal" style="--d: 0.8s">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="assets/resume/resume.pdf" download class="btn btn-outline">
+            <span>Download Resume</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+              />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-stats reveal" style="--d: 0.9s">
+          <div class="stat-card">
+            <div class="stat-icon">🌐</div>
+            <div class="stat-label">Web Development<br />Enthusiast</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">⎇</div>
+            <div class="stat-label">Git &amp; GitHub<br />User</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-label">CSE<br />Student</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📱</div>
+            <div class="stat-label">Future Android<br />Developer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ░░ ABOUT ░░ -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// who am I</span>
+          <h2 class="section-title">
+            About <span class="gradient-text">Me</span>
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <div class="glass-card about-card">
+              <p>
+                As a
+                <strong>Computer Science &amp; Engineering student</strong>, I
+                thrive on solving complex problems through code. My current
+                focus is building responsive and scalable web applications while
+                strengthening my software engineering foundations.
+              </p>
+              <p>
+                I have experience working in collaborative development
+                environments and value
+                <strong
+                  >teamwork, project coordination, and continuous
+                  learning</strong
+                >.
+              </p>
+              <p>
+                My long-term goal is to transition into
+                <strong>Native Android Development using Kotlin</strong> and
+                create impactful mobile applications that solve real-world
+                problems.
+              </p>
+              <div class="about-tags">
+                <span class="tag">Problem Solver</span>
+                <span class="tag">Team Player</span>
+                <span class="tag">Fast Learner</span>
+                <span class="tag">CSE Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-info reveal" style="--d: 0.2s">
+            <div class="glass-card info-card">
+              <h3>Quick Facts</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-icon">🎓</span>
+                  <div>
+                    <strong>University</strong
+                    ><span>United International University</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="info-icon">📚</span>
+                  <div><strong>Degree</strong><span>BSC in CSE</span></div>
+                </li>
+                <li>
+                  <span class="info-icon">💼</span>
+                  <div>
+                    <strong>Status</strong
+                    ><span>Seeking Internship / Junior Role</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="info-icon">📧</span>
+                  <div>
+                    <strong>Email</strong
+                    ><span>abdullahalsadikaas@gmail.com</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="info-icon">🌍</span>
+                  <div><strong>Location</strong><span>Bangladesh</span></div>
+                </li>
+                <li>
+                  <span class="info-icon">🚀</span>
+                  <div>
+                    <strong>Goal</strong
+                    ><span>Android & Software Engineer</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS ░░ -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// what I know</span>
+          <h2 class="section-title">
+            Technical <span class="gradient-text">Skills</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">🌐</span>
+                <h3>Frontend Development</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>HTML5</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>CSS3</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>JavaScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Responsive Web Design</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal" style="--d: 0.1s">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">⚙️</span>
+                <h3>Programming Fundamentals</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>C Programming</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>OOP</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Data Structures</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal" style="--d: 0.2s">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">🧠</span>
+                <h3>CS Foundations</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>Digital Logic Design</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 78%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Theory of Computation</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 72%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Problem Solving</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 82%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal" style="--d: 0.3s">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">⎇</span>
+                <h3>Version Control</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>Git</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>GitHub</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 82%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal" style="--d: 0.4s">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">🛠️</span>
+                <h3>Dev Tools</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>VS Code</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Android Studio</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 55%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>IntelliJ IDEA</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal" style="--d: 0.5s">
+            <div class="glass-card skill-card">
+              <div class="skill-card-header">
+                <span class="skill-card-icon">📊</span>
+                <h3>Productivity Tools</h3>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span>MS Word</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>MS Excel</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>MS PowerPoint</span>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--w: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// what I've built</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card glass-card reveal">
+            <div class="project-img project-img-1">
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/Sadik281/DiabetesTrackerAndroid"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link-btn"
+                  >GitHub ↗</a
+                >
+              </div>
+              <div class="project-badge">Health Tech</div>
+            </div>
+            <div class="project-body">
+              <h3>Diabetes Tracker App</h3>
+              <p>
+                A health tracking application designed to help diabetic patients
+                monitor glucose levels, medication schedules, and health
+                statistics with an intuitive interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Sadik281/DiabetesTrackerAndroid"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  Code
+                </a>
+                <a href="#" class="proj-link proj-link-demo">Live Demo ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal" style="--d: 0.1s">
+            <div class="project-img project-img-2">
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/Sadik281/My-Frist-Project"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link-btn"
+                  >GitHub ↗</a
+                >
+              </div>
+              <div class="project-badge">Systems</div>
+            </div>
+            <div class="project-body">
+              <h3>Desco Billing System</h3>
+              <p>
+                A command-line C program simulating a billing system for DESCO.
+                Register customers, record monthly electricity usage, and
+                generate detailed bills based on real-life unit rates.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">CLI</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Sadik281"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  Code
+                </a>
+                <a href="#" class="proj-link proj-link-demo">View Demo ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal" style="--d: 0.2s">
+            <div class="project-img project-img-3">
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/Sadik281"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link-btn"
+                  >GitHub ↗</a
+                >
+              </div>
+              <div class="project-badge">AI/EdTech</div>
+            </div>
+            <div class="project-body">
+              <h3>Learning Analytics Dashboard</h3>
+              <p>
+                A fully isolated frontend prototype for the EduLens AI Learning
+                Intelligence Platform — a visual representation of the product
+                experience, perfect for GitHub portfolio or hackathon demo.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Sadik281/Learning-Analytics-Dashboard"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  Code
+                </a>
+                <a href="#" class="proj-link proj-link-demo">Live Demo ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal" style="--d: 0.3s">
+            <div class="project-img project-img-4">
+              <div class="project-overlay">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link-btn"
+                  >GitHub ↗</a
+                >
+              </div>
+              <div class="project-badge">Coming Soon</div>
+            </div>
+            <div class="project-body">
+              <h3>Future Android Applications</h3>
+              <p>
+                A placeholder for upcoming Native Android projects developed
+                using Kotlin — mobile applications that solve real-world
+                problems with clean architecture and modern design.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Android Studio</span>
+                <span class="tech-tag">Jetpack</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Sadik281"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-link"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  Watch
+                </a>
+                <span class="proj-link proj-link-soon">In Progress…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ EDUCATION ░░ -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// academic journey</span>
+          <h2 class="section-title">
+            Edu<span class="gradient-text">cation</span>
+          </h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-badge">Currently Studying</div>
+              <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+              <h4>United International University (UIU)</h4>
+              <p>
+                Focusing on software engineering fundamentals, algorithms, web
+                development, and emerging technologies. Actively building
+                projects to apply academic knowledge to real-world challenges.
+              </p>
+              <div class="timeline-meta">
+                <span>📍 Dhaka, Bangladesh</span>
+                <span>🖥️ CSE Department</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-badge">Higher Secondary</div>
+              <h3>HSC</h3>
+              <h4>Govt Shah Sultan College</h4>
+              <p>
+                Completed Higher Secondary Certificate with a focus on science
+                education, preparing for advanced studies in engineering and
+                technology.
+              </p>
+              <div class="timeline-meta">
+                <span>📍 Bogura, Bangladesh</span>
+                <span>Science Group</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-badge">Secondary Education</div>
+              <h3>SSC</h3>
+              <h4>Bogura Zilla School</h4>
+              <p>
+                Completed Secondary School Certificate with strong academic
+                performance in core science and mathematics subjects.
+              </p>
+              <div class="timeline-meta">
+                <span>📍 Bogura, Bangladesh</span>
+                <span>Science Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CAREER ROADMAP ░░ -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// the journey ahead</span>
+          <h2 class="section-title">
+            Career <span class="gradient-text">Roadmap</span>
+          </h2>
+        </div>
+        <div class="roadmap">
+          <div class="roadmap-item roadmap-done reveal">
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-bubble">
+              <div class="roadmap-step">Stage 1</div>
+              <div class="roadmap-icon">🌐</div>
+              <div class="roadmap-label">Web Development</div>
+              <div class="roadmap-status">Active</div>
+            </div>
+          </div>
+          <div class="roadmap-item roadmap-active reveal" style="--d: 0.1s">
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-bubble">
+              <div class="roadmap-step">Stage 2</div>
+              <div class="roadmap-icon">☕</div>
+              <div class="roadmap-label">Java Programming</div>
+              <div class="roadmap-status">Learning</div>
+            </div>
+          </div>
+          <div class="roadmap-item reveal" style="--d: 0.2s">
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-bubble">
+              <div class="roadmap-step">Stage 3</div>
+              <div class="roadmap-icon">K</div>
+              <div class="roadmap-label">Kotlin Dev</div>
+              <div class="roadmap-status">Upcoming</div>
+            </div>
+          </div>
+          <div class="roadmap-item reveal" style="--d: 0.3s">
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-bubble">
+              <div class="roadmap-step">Stage 4</div>
+              <div class="roadmap-icon">📱</div>
+              <div class="roadmap-label">Native Android</div>
+              <div class="roadmap-status">Goal</div>
+            </div>
+          </div>
+          <div class="roadmap-item reveal" style="--d: 0.4s">
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-bubble">
+              <div class="roadmap-step">Stage 5</div>
+              <div class="roadmap-icon">🚀</div>
+              <div class="roadmap-label">Software Engineer</div>
+              <div class="roadmap-status">Dream</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ GITHUB ░░ -->
+    <section class="section github-section" id="github">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// open source</span>
+          <h2 class="section-title">
+            Code • Learn • <span class="gradient-text">Build</span> • Repeat
+          </h2>
+        </div>
+        <div class="github-grid">
+          <div class="glass-card github-card github-profile reveal">
+            <div class="github-avatar">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="github-logo-icon"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </div>
+            <h3>@Sadik281</h3>
+            <p>
+              Passionate developer pushing code to GitHub — building projects,
+              experimenting with ideas, and tracking every commit.
+            </p>
+            <a
+              href="https://github.com/Sadik281"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary btn-sm"
+              >View Profile ↗</a
+            >
+          </div>
+
+          <div
+            class="glass-card github-card github-stats reveal"
+            style="--d: 0.1s"
+          >
+            <h3>Repository Stats</h3>
+            <div class="github-stat-grid">
+              <div class="gh-stat">
+                <div class="gh-stat-num counter" data-target="10">0</div>
+                <div class="gh-stat-label">Repositories</div>
+              </div>
+              <div class="gh-stat">
+                <div class="gh-stat-num counter" data-target="5">0</div>
+                <div class="gh-stat-label">Projects</div>
+              </div>
+              <div class="gh-stat">
+                <div class="gh-stat-num counter" data-target="50">0</div>
+                <div class="gh-stat-label">Commits</div>
+              </div>
+              <div class="gh-stat">
+                <div class="gh-stat-num counter" data-target="3">0</div>
+                <div class="gh-stat-label">Languages</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="glass-card github-card github-langs reveal"
+            style="--d: 0.2s"
+          >
+            <h3>Most Used Languages</h3>
+            <div class="lang-bar">
+              <div
+                class="lang-segment"
+                style="--w: 40%; --c: #e34c26"
+                title="HTML 40%"
+              ></div>
+              <div
+                class="lang-segment"
+                style="--w: 30%; --c: #563d7c"
+                title="CSS 30%"
+              ></div>
+              <div
+                class="lang-segment"
+                style="--w: 20%; --c: #f1e05a"
+                title="JavaScript 20%"
+              ></div>
+              <div
+                class="lang-segment"
+                style="--w: 10%; --c: #555555"
+                title="C 10%"
+              ></div>
+            </div>
+            <div class="lang-legend">
+              <span><i style="background: #e34c26"></i>HTML 40%</span>
+              <span><i style="background: #563d7c"></i>CSS 30%</span>
+              <span><i style="background: #f1e05a"></i>JavaScript 20%</span>
+              <span><i style="background: #555555"></i>C 10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CORE STRENGTHS ░░ -->
+    <section class="section strengths-section" id="strengths">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// what drives me</span>
+          <h2 class="section-title">
+            Core <span class="gradient-text">Strengths</span>
+          </h2>
+        </div>
+        <div class="strengths-grid">
+          <div class="glass-card strength-card reveal">
+            <div class="strength-icon">🔍</div>
+            <h3>Problem Solving</h3>
+            <p>
+              Breaking down complex challenges into logical, actionable steps
+              using CS principles.
+            </p>
+          </div>
+          <div class="glass-card strength-card reveal" style="--d: 0.1s">
+            <div class="strength-icon">🤝</div>
+            <h3>Team Collaboration</h3>
+            <p>
+              Working effectively in group settings with clear communication and
+              shared goals.
+            </p>
+          </div>
+          <div class="glass-card strength-card reveal" style="--d: 0.2s">
+            <div class="strength-icon">📋</div>
+            <h3>Project Coordination</h3>
+            <p>
+              Organizing tasks and timelines to deliver well-structured software
+              outcomes.
+            </p>
+          </div>
+          <div class="glass-card strength-card reveal" style="--d: 0.3s">
+            <div class="strength-icon">📖</div>
+            <h3>Continuous Learning</h3>
+            <p>
+              Always exploring new technologies, frameworks and development best
+              practices.
+            </p>
+          </div>
+          <div class="glass-card strength-card reveal" style="--d: 0.4s">
+            <div class="strength-icon">⚡</div>
+            <h3>Adaptability</h3>
+            <p>
+              Quickly pivoting between technologies and embracing change as an
+              opportunity.
+            </p>
+          </div>
+          <div class="glass-card strength-card reveal" style="--d: 0.5s">
+            <div class="strength-icon">🏗️</div>
+            <h3>Software Design Thinking</h3>
+            <p>
+              Approaching development with a user-centric mindset and clean
+              architecture principles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// get in touch</span>
+          <h2 class="section-title">
+            Let's Build Something
+            <span class="gradient-text">Meaningful</span> Together
+          </h2>
+          <p class="section-sub">
+            I am always open to discussing technology, software development,
+            collaboration opportunities, internships, and innovative ideas.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="glass-card contact-card">
+              <h3>Reach Out Directly</h3>
+              <div class="contact-methods">
+                <a
+                  href="mailto:abdullahalsadikaas@gmail.com"
+                  class="contact-method"
+                >
+                  <div class="cm-icon">✉</div>
+                  <div>
+                    <strong>Email</strong
+                    ><span>abdullahalsadikaas@gmail.com</span>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/Sadik281"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-method"
+                >
+                  <div class="cm-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                      />
+                    </svg>
+                  </div>
+                  <div><strong>GitHub</strong><span>@Sadik281</span></div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/md-abdullah-al-sadik-59306b347?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-method"
+                >
+                  <div class="cm-icon">in</div>
+                  <div>
+                    <strong>LinkedIn</strong><span>Connect with me</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal" style="--d: 0.2s">
+            <div class="glass-card">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                  />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input
+                    type="email"
+                    id="femail"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="fsubject">Subject</label>
+                  <input
+                    type="text"
+                    id="fsubject"
+                    name="subject"
+                    placeholder="What's this about?"
+                    required
+                  />
+                  <span class="form-error" id="subjectError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="fmessage">Message</label>
+                  <textarea
+                    id="fmessage"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your idea or opportunity…"
+                    required
+                  ></textarea>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                  <span id="btnText">Send Message</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                  </svg>
+                </button>
+                <div class="form-success" id="formSuccess">
+                  ✅ Message sent! I'll get back to you soon.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="logo-bracket">&lt;</span>Sadik<span class="logo-dot"
+                >.dev</span
+              ><span class="logo-bracket">/&gt;</span>
+            </a>
+            <p>Building the future, one commit at a time.</p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://github.com/Sadik281"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:abdullahalsadikaas@gmail.com"
+              aria-label="Email"
+              class="social-link"
+              >✉</a
+            >
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              class="social-link"
+              >in</a
+            >
+          </div>
+          <div class="footer-copy">
+            <p>
+              Designed &amp; Developed by
+              <span class="gradient-text">Md. Abdullah Al Sadik</span>
+            </p>
+            <p class="footer-year">
+              © <span id="year"></span> All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
