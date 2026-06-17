@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -38,6 +38,7 @@
         </a>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#hiring" class="nav-link">Hire Me</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -50,8 +51,8 @@
             id="themeToggle"
             aria-label="Toggle theme"
           >
-            <span class="theme-icon sun">☀</span>
-            <span class="theme-icon moon">◑</span>
+            <span class="theme-icon sun animated-icon icon-sun"></span>
+            <span class="theme-icon moon animated-icon icon-moon"></span>
           </button>
           <button class="hamburger" id="hamburger" aria-label="Open menu">
             <span></span><span></span><span></span>
@@ -79,11 +80,11 @@
             <img src="profile.jpeg" alt="Profile photo" class="avatar-photo" />
           </div>
           <!-- Floating tech icons -->
-          <div class="float-icon float-icon-1" title="HTML5">⟨/⟩</div>
-          <div class="float-icon float-icon-2" title="CSS3">✦</div>
+          <div class="float-icon float-icon-1" title="HTML5">HTML</div>
+          <div class="float-icon float-icon-2" title="CSS3">CSS</div>
           <div class="float-icon float-icon-3" title="JavaScript">JS</div>
-          <div class="float-icon float-icon-4" title="Git">⎇</div>
-          <div class="float-icon float-icon-5" title="Android">⬡</div>
+          <div class="float-icon float-icon-4" title="Git">Git</div>
+          <div class="float-icon float-icon-5" title="Android">App</div>
           <div class="float-icon float-icon-6" title="Kotlin">K</div>
         </div>
 
@@ -108,6 +109,12 @@
           applications, and continuously learning modern technologies.
         </p>
 
+        <div class="hero-proof reveal" style="--d: 0.75s">
+          <span>Open to Internship / Junior Developer roles</span>
+          <span>Frontend + Android learning path</span>
+          <span>Project-based portfolio</span>
+        </div>
+
         <div class="hero-btns reveal" style="--d: 0.8s">
           <a href="#projects" class="btn btn-primary">
             <span>View Projects</span>
@@ -120,8 +127,13 @@
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          <a href="assets/resume/resume.pdf" download class="btn btn-outline">
-            <span>Download Resume</span>
+          <a
+            href="assets/resume/resume.html"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >
+            <span>View Resume</span>
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -138,19 +150,19 @@
 
         <div class="hero-stats reveal" style="--d: 0.9s">
           <div class="stat-card">
-            <div class="stat-icon">🌐</div>
+            <div class="stat-icon animated-icon icon-web"></div>
             <div class="stat-label">Web Development<br />Enthusiast</div>
           </div>
           <div class="stat-card">
-            <div class="stat-icon">⎇</div>
+            <div class="stat-icon animated-icon icon-git"></div>
             <div class="stat-label">Git &amp; GitHub<br />User</div>
           </div>
           <div class="stat-card">
-            <div class="stat-icon">🎓</div>
+            <div class="stat-icon animated-icon icon-edu"></div>
             <div class="stat-label">CSE<br />Student</div>
           </div>
           <div class="stat-card">
-            <div class="stat-icon">📱</div>
+            <div class="stat-icon animated-icon icon-mobile"></div>
             <div class="stat-label">Future Android<br />Developer</div>
           </div>
         </div>
@@ -163,6 +175,64 @@
     </section>
 
     <!-- ░░ ABOUT ░░ -->
+    <!-- HIRING SNAPSHOT -->
+    <section class="section hiring-section" id="hiring">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// recruiter snapshot</span>
+          <h2 class="section-title">
+            Why <span class="gradient-text">Hire Me</span>
+          </h2>
+          <p class="section-sub">
+            I am ready for a junior role where I can ship clean interfaces,
+            learn fast from senior engineers, and turn academic CS fundamentals
+            into real production habits.
+          </p>
+        </div>
+        <div class="hiring-grid">
+          <div class="glass-card hiring-card reveal">
+            <div class="hiring-icon animated-icon icon-code"></div>
+            <span class="hiring-label">Role Fit</span>
+            <h3>Junior Frontend / Web Developer</h3>
+            <p>
+              Comfortable building responsive UI with HTML, CSS, JavaScript,
+              accessibility-minded structure, and polished interaction states.
+            </p>
+          </div>
+          <div class="glass-card hiring-card reveal" style="--d: 0.1s">
+            <div class="hiring-icon animated-icon icon-bolt"></div>
+            <span class="hiring-label">Work Style</span>
+            <h3>Fast Learner, Clear Communicator</h3>
+            <p>
+              I break tasks into small deliverables, ask focused questions, and
+              keep improving through feedback, debugging, and documentation.
+            </p>
+          </div>
+          <div class="glass-card hiring-card reveal" style="--d: 0.2s">
+            <div class="hiring-icon animated-icon icon-mobile"></div>
+            <span class="hiring-label">Growth Path</span>
+            <h3>Android Engineering Focus</h3>
+            <p>
+              Building Java/Android foundations now and moving toward Kotlin,
+              Jetpack, and clean mobile architecture for long-term growth.
+            </p>
+          </div>
+        </div>
+        <div class="readiness-panel glass-card reveal" style="--d: 0.3s">
+          <div>
+            <span class="hiring-label">Hiring Readiness</span>
+            <h3>Signals recruiters usually look for</h3>
+          </div>
+          <div class="readiness-list">
+            <span>Portfolio projects with source code</span>
+            <span>GitHub activity and version control practice</span>
+            <span>CS fundamentals: DSA, OOP, discrete math</span>
+            <span>Available for internship / junior role discussion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header reveal">
@@ -208,36 +278,36 @@
               <h3>Quick Facts</h3>
               <ul class="info-list">
                 <li>
-                  <span class="info-icon">🎓</span>
+                  <span class="info-icon animated-icon icon-edu"></span>
                   <div>
                     <strong>University</strong
                     ><span>United International University</span>
                   </div>
                 </li>
                 <li>
-                  <span class="info-icon">📚</span>
+                  <span class="info-icon animated-icon icon-book"></span>
                   <div><strong>Degree</strong><span>BSC in CSE</span></div>
                 </li>
                 <li>
-                  <span class="info-icon">💼</span>
+                  <span class="info-icon animated-icon icon-briefcase"></span>
                   <div>
                     <strong>Status</strong
                     ><span>Seeking Internship / Junior Role</span>
                   </div>
                 </li>
                 <li>
-                  <span class="info-icon">📧</span>
+                  <span class="info-icon animated-icon icon-mail"></span>
                   <div>
                     <strong>Email</strong
                     ><span>abdullahalsadikaas@gmail.com</span>
                   </div>
                 </li>
                 <li>
-                  <span class="info-icon">🌍</span>
+                  <span class="info-icon animated-icon icon-location"></span>
                   <div><strong>Location</strong><span>Bangladesh</span></div>
                 </li>
                 <li>
-                  <span class="info-icon">🚀</span>
+                  <span class="info-icon animated-icon icon-rocket"></span>
                   <div>
                     <strong>Goal</strong
                     ><span>Android & Software Engineer</span>
@@ -263,7 +333,7 @@
           <div class="skill-group reveal">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">🌐</span>
+                <span class="skill-card-icon animated-icon icon-web"></span>
                 <h3>Frontend Development</h3>
               </div>
               <div class="skill-items">
@@ -298,7 +368,7 @@
           <div class="skill-group reveal" style="--d: 0.1s">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">⚙️</span>
+                <span class="skill-card-icon animated-icon icon-gear"></span>
                 <h3>Programming Fundamentals</h3>
               </div>
               <div class="skill-items">
@@ -333,7 +403,7 @@
           <div class="skill-group reveal" style="--d: 0.2s">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">🧠</span>
+                <span class="skill-card-icon animated-icon icon-brain"></span>
                 <h3>CS Foundations</h3>
               </div>
               <div class="skill-items">
@@ -368,7 +438,7 @@
           <div class="skill-group reveal" style="--d: 0.3s">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">⎇</span>
+                <span class="skill-card-icon animated-icon icon-git"></span>
                 <h3>Version Control</h3>
               </div>
               <div class="skill-items">
@@ -391,7 +461,7 @@
           <div class="skill-group reveal" style="--d: 0.4s">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">🛠️</span>
+                <span class="skill-card-icon animated-icon icon-tools"></span>
                 <h3>Dev Tools</h3>
               </div>
               <div class="skill-items">
@@ -420,7 +490,7 @@
           <div class="skill-group reveal" style="--d: 0.5s">
             <div class="glass-card skill-card">
               <div class="skill-card-header">
-                <span class="skill-card-icon">📊</span>
+                <span class="skill-card-icon animated-icon icon-chart"></span>
                 <h3>Productivity Tools</h3>
               </div>
               <div class="skill-items">
@@ -479,6 +549,10 @@
                 monitor glucose levels, medication schedules, and health
                 statistics with an intuitive interface.
               </p>
+              <ul class="project-impact">
+                <li>Designed patient-first flows for logs, schedules, and stats.</li>
+                <li>Practiced Android data handling and Firebase-backed features.</li>
+              </ul>
               <div class="project-tech">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">Android</span>
@@ -498,7 +572,7 @@
                   </svg>
                   Code
                 </a>
-                <a href="#" class="proj-link proj-link-demo">Live Demo ↗</a>
+                <span class="proj-link proj-link-soon">Demo pending</span>
               </div>
             </div>
           </div>
@@ -523,6 +597,10 @@
                 Register customers, record monthly electricity usage, and
                 generate detailed bills based on real-life unit rates.
               </p>
+              <ul class="project-impact">
+                <li>Applied structured programming, conditionals, and billing logic.</li>
+                <li>Focused on input validation, calculations, and readable output.</li>
+              </ul>
               <div class="project-tech">
                 <span class="tech-tag">C</span>
                 <span class="tech-tag">CLI</span>
@@ -530,7 +608,7 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/Sadik281"
+                  href="https://github.com/Sadik281/My-Frist-Project"
                   target="_blank"
                   rel="noopener"
                   class="proj-link"
@@ -542,7 +620,7 @@
                   </svg>
                   Code
                 </a>
-                <a href="#" class="proj-link proj-link-demo">View Demo ↗</a>
+                <span class="proj-link proj-link-soon">CLI project</span>
               </div>
             </div>
           </div>
@@ -567,6 +645,10 @@
                 Intelligence Platform — a visual representation of the product
                 experience, perfect for GitHub portfolio or hackathon demo.
               </p>
+              <ul class="project-impact">
+                <li>Built dashboard-style UI with cards, charts, and responsive layout.</li>
+                <li>Practiced product thinking for student progress visualization.</li>
+              </ul>
               <div class="project-tech">
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS3</span>
@@ -587,7 +669,7 @@
                   </svg>
                   Code
                 </a>
-                <a href="#" class="proj-link proj-link-demo">Live Demo ↗</a>
+                <span class="proj-link proj-link-soon">Frontend prototype</span>
               </div>
             </div>
           </div>
@@ -596,7 +678,7 @@
             <div class="project-img project-img-4">
               <div class="project-overlay">
                 <a
-                  href=""
+                  href="https://github.com/Sadik281"
                   target="_blank"
                   rel="noopener"
                   class="project-link-btn"
@@ -612,6 +694,10 @@
                 using Kotlin — mobile applications that solve real-world
                 problems with clean architecture and modern design.
               </p>
+              <ul class="project-impact">
+                <li>Next target: Kotlin, Jetpack components, and local storage.</li>
+                <li>Planning small apps with real user workflows, not only screens.</li>
+              </ul>
               <div class="project-tech">
                 <span class="tech-tag">Kotlin</span>
                 <span class="tech-tag">Android Studio</span>
@@ -661,8 +747,8 @@
                 projects to apply academic knowledge to real-world challenges.
               </p>
               <div class="timeline-meta">
-                <span>📍 Dhaka, Bangladesh</span>
-                <span>🖥️ CSE Department</span>
+                <span><i class="meta-icon animated-icon icon-location"></i>Dhaka, Bangladesh</span>
+                <span><i class="meta-icon animated-icon icon-code"></i>CSE Department</span>
               </div>
             </div>
           </div>
@@ -679,7 +765,7 @@
                 technology.
               </p>
               <div class="timeline-meta">
-                <span>📍 Bogura, Bangladesh</span>
+                <span><i class="meta-icon animated-icon icon-location"></i>Bogura, Bangladesh</span>
                 <span>Science Group</span>
               </div>
             </div>
@@ -696,7 +782,7 @@
                 performance in core science and mathematics subjects.
               </p>
               <div class="timeline-meta">
-                <span>📍 Bogura, Bangladesh</span>
+                <span><i class="meta-icon animated-icon icon-location"></i>Bogura, Bangladesh</span>
                 <span>Science Group</span>
               </div>
             </div>
@@ -719,7 +805,7 @@
             <div class="roadmap-connector"></div>
             <div class="roadmap-bubble">
               <div class="roadmap-step">Stage 1</div>
-              <div class="roadmap-icon">🌐</div>
+              <div class="roadmap-icon animated-icon icon-web"></div>
               <div class="roadmap-label">Web Development</div>
               <div class="roadmap-status">Active</div>
             </div>
@@ -728,7 +814,7 @@
             <div class="roadmap-connector"></div>
             <div class="roadmap-bubble">
               <div class="roadmap-step">Stage 2</div>
-              <div class="roadmap-icon">☕</div>
+              <div class="roadmap-icon animated-icon icon-java"></div>
               <div class="roadmap-label">Java Programming</div>
               <div class="roadmap-status">Learning</div>
             </div>
@@ -737,7 +823,7 @@
             <div class="roadmap-connector"></div>
             <div class="roadmap-bubble">
               <div class="roadmap-step">Stage 3</div>
-              <div class="roadmap-icon">K</div>
+              <div class="roadmap-icon animated-icon icon-kotlin"></div>
               <div class="roadmap-label">Kotlin Dev</div>
               <div class="roadmap-status">Upcoming</div>
             </div>
@@ -746,7 +832,7 @@
             <div class="roadmap-connector"></div>
             <div class="roadmap-bubble">
               <div class="roadmap-step">Stage 4</div>
-              <div class="roadmap-icon">📱</div>
+              <div class="roadmap-icon animated-icon icon-mobile"></div>
               <div class="roadmap-label">Native Android</div>
               <div class="roadmap-status">Goal</div>
             </div>
@@ -755,7 +841,7 @@
             <div class="roadmap-connector"></div>
             <div class="roadmap-bubble">
               <div class="roadmap-step">Stage 5</div>
-              <div class="roadmap-icon">🚀</div>
+              <div class="roadmap-icon animated-icon icon-rocket"></div>
               <div class="roadmap-label">Software Engineer</div>
               <div class="roadmap-status">Dream</div>
             </div>
@@ -874,7 +960,7 @@
         </div>
         <div class="strengths-grid">
           <div class="glass-card strength-card reveal">
-            <div class="strength-icon">🔍</div>
+            <div class="strength-icon animated-icon icon-search"></div>
             <h3>Problem Solving</h3>
             <p>
               Breaking down complex challenges into logical, actionable steps
@@ -882,7 +968,7 @@
             </p>
           </div>
           <div class="glass-card strength-card reveal" style="--d: 0.1s">
-            <div class="strength-icon">🤝</div>
+            <div class="strength-icon animated-icon icon-team"></div>
             <h3>Team Collaboration</h3>
             <p>
               Working effectively in group settings with clear communication and
@@ -890,7 +976,7 @@
             </p>
           </div>
           <div class="glass-card strength-card reveal" style="--d: 0.2s">
-            <div class="strength-icon">📋</div>
+            <div class="strength-icon animated-icon icon-plan"></div>
             <h3>Project Coordination</h3>
             <p>
               Organizing tasks and timelines to deliver well-structured software
@@ -898,7 +984,7 @@
             </p>
           </div>
           <div class="glass-card strength-card reveal" style="--d: 0.3s">
-            <div class="strength-icon">📖</div>
+            <div class="strength-icon animated-icon icon-book"></div>
             <h3>Continuous Learning</h3>
             <p>
               Always exploring new technologies, frameworks and development best
@@ -906,7 +992,7 @@
             </p>
           </div>
           <div class="glass-card strength-card reveal" style="--d: 0.4s">
-            <div class="strength-icon">⚡</div>
+            <div class="strength-icon animated-icon icon-bolt"></div>
             <h3>Adaptability</h3>
             <p>
               Quickly pivoting between technologies and embracing change as an
@@ -914,7 +1000,7 @@
             </p>
           </div>
           <div class="glass-card strength-card reveal" style="--d: 0.5s">
-            <div class="strength-icon">🏗️</div>
+            <div class="strength-icon animated-icon icon-architecture"></div>
             <h3>Software Design Thinking</h3>
             <p>
               Approaching development with a user-centric mindset and clean
@@ -943,12 +1029,19 @@
           <div class="contact-info reveal">
             <div class="glass-card contact-card">
               <h3>Reach Out Directly</h3>
+              <div class="availability-note">
+                <span class="animated-icon icon-check"></span>
+                <p>
+                  Currently open to internship, junior developer, and
+                  project-based collaboration discussions.
+                </p>
+              </div>
               <div class="contact-methods">
                 <a
                   href="mailto:abdullahalsadikaas@gmail.com"
                   class="contact-method"
                 >
-                  <div class="cm-icon">✉</div>
+                  <div class="cm-icon animated-icon icon-mail"></div>
                   <div>
                     <strong>Email</strong
                     ><span>abdullahalsadikaas@gmail.com</span>
@@ -1043,7 +1136,8 @@
                   </svg>
                 </button>
                 <div class="form-success" id="formSuccess">
-                  ✅ Message sent! I'll get back to you soon.
+                  <span class="success-icon animated-icon icon-check"></span>
+                  Message sent! I'll get back to you soon.
                 </div>
               </form>
             </div>
@@ -1082,10 +1176,10 @@
               href="mailto:abdullahalsadikaas@gmail.com"
               aria-label="Email"
               class="social-link"
-              >✉</a
+              ><span class="animated-icon icon-mail"></span></a
             >
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/md-abdullah-al-sadik-59306b347?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener"
               aria-label="LinkedIn"
@@ -1105,7 +1199,7 @@
         </div>
       </div>
       <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        ↑
+        <span class="animated-icon icon-arrow-up"></span>
       </button>
     </footer>
 

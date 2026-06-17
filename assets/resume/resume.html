@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Abdullah Al Sadik - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #eef3fb;
+        color: #122033;
+        font-family: "Manrope", "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      .page {
+        width: min(920px, calc(100vw - 32px));
+        margin: 32px auto;
+        background: #fff;
+        border: 1px solid #d9e2f1;
+        border-radius: 12px;
+        box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+        overflow: hidden;
+      }
+
+      header {
+        padding: 36px 42px 28px;
+        background: linear-gradient(135deg, #0f172a, #1d4ed8);
+        color: #fff;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2.15rem;
+        line-height: 1.1;
+        font-weight: 800;
+      }
+
+      .role {
+        margin-top: 8px;
+        color: #bfdbfe;
+        font-weight: 700;
+      }
+
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 18px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.78rem;
+      }
+
+      .contacts a,
+      .contacts span {
+        color: #e0f2fe;
+        text-decoration: none;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1.7fr;
+        gap: 30px;
+        padding: 34px 42px 42px;
+      }
+
+      section + section {
+        margin-top: 26px;
+      }
+
+      h2 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #2563eb;
+        font-family: "JetBrains Mono", monospace;
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #0f172a;
+      }
+
+      p,
+      li {
+        font-size: 0.9rem;
+        color: #475569;
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .pill {
+        border: 1px solid #cbd5e1;
+        border-radius: 999px;
+        padding: 5px 9px;
+        color: #334155;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      .item + .item {
+        margin-top: 18px;
+      }
+
+      .meta {
+        margin-top: 3px;
+        color: #64748b;
+        font-size: 0.82rem;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .print-bar {
+        padding: 14px 42px;
+        border-top: 1px solid #e2e8f0;
+        background: #f8fafc;
+        text-align: right;
+      }
+
+      button {
+        border: 0;
+        border-radius: 999px;
+        padding: 10px 18px;
+        background: #2563eb;
+        color: #fff;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .print-bar {
+          display: none;
+        }
+      }
+
+      @media (max-width: 720px) {
+        main {
+          grid-template-columns: 1fr;
+          padding: 28px;
+        }
+
+        header {
+          padding: 30px 28px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="page">
+      <header>
+        <h1>Md. Abdullah Al Sadik</h1>
+        <p class="role">CSE Student | Junior Web Developer | Android Engineer in Training</p>
+        <div class="contacts">
+          <span>Email: <a href="mailto:abdullahalsadikaas@gmail.com">abdullahalsadikaas@gmail.com</a></span>
+          <span>GitHub: <a href="https://github.com/Sadik281">github.com/Sadik281</a></span>
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/md-abdullah-al-sadik-59306b347">linkedin.com/in/md-abdullah-al-sadik-59306b347</a></span>
+          <span>Location: Dhaka, Bangladesh</span>
+        </div>
+      </header>
+
+      <main>
+        <aside>
+          <section>
+            <h2>Technical Skills</h2>
+            <div class="pill-list">
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">Java</span>
+              <span class="pill">Firebase</span>
+              <span class="pill">Git</span>
+              <span class="pill">GitHub</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Tools</h2>
+            <div class="pill-list">
+              <span class="pill">VS Code</span>
+              <span class="pill">Android Studio</span>
+              <span class="pill">IntelliJ IDEA</span>
+              <span class="pill">Chrome DevTools</span>
+              <span class="pill">MS Office</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Hiring Signals</h2>
+            <p>Strong communication, fast learner, collaborative team contributor, and detail-oriented problem solver.</p>
+          </section>
+
+          <section>
+            <h2>Availability</h2>
+            <p>Ready for internship or junior developer roles in frontend or mobile engineering.</p>
+          </section>
+        </aside>
+
+        <div>
+          <section>
+            <h2>Professional Summary</h2>
+            <p>
+              Motivated CSE student with hands-on project experience in web and mobile development. Delivered responsive interfaces, Android solutions, and Git-based collaboration while building strong software engineering habits.
+            </p>
+            <ul>
+              <li>Built real product experiences with HTML, CSS, JavaScript, Java, and Firebase.</li>
+              <li>Followed clean code practices, version control workflows, and documentation habits.</li>
+              <li>Focused on fast learning, debugging, and delivering functional solutions in academic and personal projects.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Professional Development</h2>
+            <div class="item">
+              <p class="meta">Self-directed learning</p>
+              <ul>
+                <li>Actively improving Android skills with Kotlin fundamentals and Jetpack component concepts.</li>
+                <li>Practicing responsive frontend layouts, accessibility, and performance optimization.</li>
+                <li>Maintaining GitHub repositories for project code and version history.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Projects</h2>
+            <div class="item">
+              <h3>Diabetes Tracker App</h3>
+              <p class="meta">Java, Android, Firebase</p>
+              <ul>
+                <li>Built an Android health tracker for logging glucose readings and medication reminders.</li>
+                <li>Implemented Firebase data storage, user authentication, and notification workflows.</li>
+                <li>Improved usability with clear forms, progress summaries, and easy navigation.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h3>Desco Billing System</h3>
+              <p class="meta">C, Command Line Interface</p>
+              <ul>
+                <li>Developed a billing system with customer registration, meter reading, and usage-based calculations.</li>
+                <li>Focused on data validation, error handling, and user-friendly console output.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h3>Learning Analytics Dashboard</h3>
+              <p class="meta">HTML, CSS, JavaScript</p>
+              <ul>
+                <li>Created a responsive dashboard to display student progress metrics and learning insights.</li>
+                <li>Designed visual hierarchy, interactive layouts, and mobile-friendly pages.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+            <div class="item">
+              <h3>BSc in Computer Science & Engineering</h3>
+              <p class="meta">United International University, Dhaka</p>
+              <p>Focused on programming fundamentals, OOP, data structures, algorithms, and software engineering foundations.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <div class="print-bar">
+        <button type="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </article>
+  </body>
+</html>
