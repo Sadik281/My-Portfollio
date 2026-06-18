@@ -6,6 +6,7 @@
 /* ─── DOM READY ──────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initFavicon();
   initCanvas();
   initCursor();
   initNavbar();
@@ -31,6 +32,106 @@ function initTheme() {
     const next = current === 'dark' ? 'light' : 'dark';
     body.setAttribute('data-theme', next);
     localStorage.setItem('sadik-theme', next);
+  });
+}
+
+function initFavicon() {
+  const faviconId = 'dynamicFavicon';
+  let faviconLink = document.getElementById(faviconId);
+  if (!faviconLink) {
+    faviconLink = document.createElement('link');
+    faviconLink.id = faviconId;
+    faviconLink.rel = 'icon';
+    faviconLink.type = 'image/png';
+    document.head.appendChild(faviconLink);
+  }
+
+  const size = 64;
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = size;
+  const ctx = canvas.getContext('2d');
+
+  function drawFavicon(timestamp) {
+    const time = timestamp / 1000;
+    ctx.clearRect(0, 0, size, size);
+
+    const background = '#0F172A';
+    const accentA = '#3B82F6';
+    const accentB = '#8B5CF6';
+
+    const gradient = ctx.createLinearGradient(0, 0, size, size);
+    gradient.addColorStop(0, accentA);
+    gradient.addColorStop(1, accentB);
+
+    ctx.fillStyle = background;
+    ctx.fillRect(0, 0, size, size);
+
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(size * 0.5, size * 0.5, size * 0.35, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = 'rgba(255,255,255,0.12)';
+    ctx.beginPath();
+    ctx.arc(size * 0.5, size * 0.5, size * 0.35, 0, Math.PI * 2);
+    ctx.fill();
+
+    const orbitRadius = size * 0.28;
+    const orbitAngle = time * 2.4;
+    const orbitX = size * 0.5 + Math.cos(orbitAngle) * orbitRadius;
+    const orbitY = size * 0.5 + Math.sin(orbitAngle) * orbitRadius;
+
+    ctx.strokeStyle = `rgba(255,255,255,${0.22 + Math.cos(time * 2.8) * 0.08})`;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(size * 0.5, size * 0.5, orbitRadius + 2, 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.fillStyle = `rgba(255,255,255,${0.95 + Math.sin(time * 4) * 0.05})`;
+    ctx.beginPath();
+    ctx.arc(orbitX, orbitY, size * 0.065, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.strokeStyle = '#FFF';
+    ctx.lineWidth = 3.5;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(size * 0.36, size * 0.42);
+    ctx.lineTo(size * 0.61, size * 0.42);
+    ctx.quadraticCurveTo(size * 0.72, size * 0.42, size * 0.72, size * 0.52);
+    ctx.quadraticCurveTo(size * 0.72, size * 0.62, size * 0.61, size * 0.62);
+    ctx.lineTo(size * 0.36, size * 0.62);
+    ctx.stroke();
+
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(size * 0.43, size * 0.495);
+    ctx.lineTo(size * 0.5, size * 0.495);
+    ctx.stroke();
+
+    faviconLink.href = canvas.toDataURL('image/png');
+  }
+
+  let lastUpdate = 0;
+  function animateFavicon(now) {
+    if (document.hidden) {
+      lastUpdate = now;
+      requestAnimationFrame(animateFavicon);
+      return;
+    }
+
+    if (now - lastUpdate > 90) {
+      drawFavicon(now);
+      lastUpdate = now;
+    }
+    requestAnimationFrame(animateFavicon);
+  }
+
+  requestAnimationFrame(animateFavicon);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+      drawFavicon(performance.now());
+    }
   });
 }
 
