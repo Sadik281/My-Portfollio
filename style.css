@@ -2756,6 +2756,8 @@ body[data-theme="dark"] {
 /* ── MISC ────────────────────────────────────────────────────── */
 @media (max-width: 480px) {
   .hero-btns .btn {
+    width: 100%;
+    justify-content: center;
     font-size: .78rem;
     padding: .65rem 1.1rem;
   }
