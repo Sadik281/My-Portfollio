@@ -2990,7 +2990,7 @@ body[data-theme="dark"] {
   .hero-avatar-wrap {
     width: min(74vw, 330px);
     height: min(74vw, 330px);
-    order: 0;
+    order: -1;
   }
 
   .avatar-img {
