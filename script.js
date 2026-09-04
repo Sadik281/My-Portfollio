@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCanvas();
   initCursor();
   initNavbar();
+  initAvatarSlideshow();
   initTyping();
   initReveal();
   initSkillBars();
@@ -19,6 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   document.getElementById('year').textContent = new Date().getFullYear();
 });
+
+function initAvatarSlideshow() {
+  const photos = document.querySelectorAll('.avatar-photo');
+  if (photos.length < 2) return;
+
+  let activePhoto = 0;
+  setInterval(() => {
+    photos[activePhoto].style.opacity = '0';
+    activePhoto = (activePhoto + 1) % photos.length;
+    photos[activePhoto].style.opacity = '1';
+  }, 4000);
+}
 
 /* ─── THEME ──────────────────────────────────────────────────── */
 function initTheme() {

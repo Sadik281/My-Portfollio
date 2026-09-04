@@ -789,6 +789,14 @@ span,
   height: 100%;
   object-fit: cover;
   display: block;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .8s ease;
+}
+
+.avatar-photo:first-child {
+  opacity: 1;
 }
 
 .avatar-svg {
