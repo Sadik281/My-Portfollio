@@ -434,16 +434,24 @@ function initForm() {
 
     if (!valid) return;
 
-    // Simulate send
     const btn = document.getElementById('btnText');
     btn.textContent = 'Sending…';
-    setTimeout(() => {
-      form.reset();
-      btn.textContent = 'Send Message';
-      const success = document.getElementById('formSuccess');
-      success.classList.add('visible');
-      setTimeout(() => success.classList.remove('visible'), 5000);
-    }, 1200);
+    const whatsappNumber = '8801844921550';
+    const whatsappMessage = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Subject: ${subject}`,
+      '',
+      message
+    ].join('\n');
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    form.reset();
+    btn.textContent = 'Send Message';
+    const success = document.getElementById('formSuccess');
+    success.classList.add('visible');
+    setTimeout(() => success.classList.remove('visible'), 5000);
   });
 }
 
