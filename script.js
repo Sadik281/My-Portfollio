@@ -37,7 +37,7 @@ function initAvatarSlideshow() {
 function initTheme() {
   const btn  = document.getElementById('themeToggle');
   const body = document.body;
-  const saved = localStorage.getItem('sadik-theme') || 'dark';
+  const saved = localStorage.getItem('sadik-theme') || 'light';
   body.setAttribute('data-theme', saved);
 
   btn.addEventListener('click', () => {
