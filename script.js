@@ -1,11 +1,10 @@
 /**
  * SADIK.DEV — Portfolio JavaScript
- * Features: Canvas grid, cursor, typing, scroll, counters, form validation, theme
+ * Features: Canvas grid, cursor, typing, scroll, counters, and form validation
  */
 
 /* ─── DOM READY ──────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
   initFavicon();
   initCanvas();
   initCursor();
@@ -33,20 +32,8 @@ function initAvatarSlideshow() {
   }, 4000);
 }
 
-/* ─── THEME ──────────────────────────────────────────────────── */
-function initTheme() {
-  const btn  = document.getElementById('themeToggle');
-  const body = document.body;
-  const saved = localStorage.getItem('sadik-theme') || 'light';
-  body.setAttribute('data-theme', saved);
-
-  btn.addEventListener('click', () => {
-    const current = body.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    body.setAttribute('data-theme', next);
-    localStorage.setItem('sadik-theme', next);
-  });
-}
+/* ─── FORCE NIGHT MODE ───────────────────────────────────────── */
+document.body.setAttribute('data-theme', 'dark');
 
 function initFavicon() {
   const faviconId = 'dynamicFavicon';
